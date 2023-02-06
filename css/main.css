@@ -24,13 +24,18 @@ img {
   width: 1100px;
   /* Inner tag 를 가운데로 몰아주기위해서. 상하 = 0. 좌우 = auto */
   margin: 0 auto;
-  background-color: blueviolet;
   height: 120px;
   position: relative;
 }
 
 header {
-  background-color: blue;
+  background-color: #f6f5ef;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #eae7e2;
+  z-index: 1;
 }
 
 /* 이미지 수직정렬 */
@@ -39,5 +44,69 @@ header .inner .logo {
   margin: auto;
   top: 0;
   bottom: 0;
+  left: 0;
   height: 75px;
+}
+
+/* sub-menu */
+header .inner .sub-menu {
+  display: flex;
+  position: absolute;
+  top: 6px;
+  right: 50px;
+}
+
+header .inner .sub-menu .sub-menu__menu {
+  display: flex;
+}
+
+header .inner .sub-menu .sub-menu__menu > li {
+}
+header .inner .sub-menu .sub-menu__menu > li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 1px;
+  height: 13px;
+  background-color: #333;
+  opacity: 0.1;
+}
+
+header .inner .sub-menu .sub-menu__menu > li > a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 13px;
+  color: #656565;
+}
+header .inner .sub-menu .sub-menu__menu > li > a:hover {
+  text-decoration: underline;
+}
+header .inner .sub-menu .search {
+  position: relative;
+}
+
+header .inner .sub-menu .search > input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  transition: width 0.4s;
+}
+header .inner .sub-menu .search > input:hover {
+  width: 200px;
+}
+
+header .inner .sub-menu .search .material-symbols-outlined {
+  position: absolute;
+  right: 3px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 24px;
 }
