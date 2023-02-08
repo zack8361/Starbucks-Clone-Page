@@ -627,6 +627,7 @@ header .badges .badge img {
   background-size: cover;
   background-repeat: no-repeat;
   left: -50px;
+  opacity: 0;
 }
 .ethiopia::after {
   content: "";
@@ -638,6 +639,12 @@ header .badges .badge img {
   bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0;
+}
+.ethiopia:hover::before,
+.ethiopia:hover::after {
+  transition: 1.5s;
+  opacity: 1;
 }
 
 .ethiopia .inner {
