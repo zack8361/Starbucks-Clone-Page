@@ -5,7 +5,6 @@
 
 /* COMMON */
 body {
-  height: 10000px;
   color: #333;
   font-size: 16px;
   font-weight: 400px;
@@ -867,4 +866,131 @@ header .badges .badge img {
 .store:hover .inner .store_text2,
 .store:hover .inner .btn--black {
   transform: translateX(0);
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  background-color: #2c2a29;
+  padding: 30px 0;
+}
+
+footer .inner {
+  position: relative;
+}
+
+/* FOOTER__MENU */
+
+footer .inner .footer__menu {
+  display: flex;
+}
+
+footer .inner .footer__menu .left {
+  width: 90%;
+}
+
+footer .inner .footer__menu .left .menu {
+  display: flex;
+}
+
+footer .inner .footer__menu .left .menu > li {
+  width: 20%;
+}
+
+footer .inner .footer__menu .left .menu > li > ul {
+}
+
+footer .inner .footer__menu .left .menu > li > ul > a {
+  display: block;
+  font-size: 14px;
+  color: white;
+  margin: 10px 0px;
+}
+footer .inner .footer__menu .left .menu > li > ul > li {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 5px;
+  margin: 5px 0px;
+}
+footer .inner .footer__menu .left .menu > li > ul > a:hover,
+footer .inner .footer__menu .left .menu > li > ul > li:hover {
+  text-decoration: underline;
+}
+
+footer .inner .footer__menu .right {
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+  align-items: flex-start;
+}
+
+footer .inner .footer__menu .right img {
+  float: right;
+}
+
+footer .inner .footer__sub-menu {
+  margin-top: 50px;
+}
+
+footer .inner .footer__sub-menu ul > li:first-child > a {
+  color: #00704a;
+}
+
+footer .inner .footer__sub-menu ul {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+}
+
+footer .inner .footer__sub-menu ul li {
+  color: rgb(87, 83, 83);
+}
+
+footer .inner .footer__sub-menu ul li a {
+  color: white;
+  margin: 0px 10px;
+}
+
+footer .inner .footer__sub-menu ul li:hover,
+footer .inner .footer__sub-menu ul li a:hover {
+  text-decoration: underline;
+}
+/* FOOTER - BTN */
+
+footer .inner .footer__btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .inner .footer__btn .btn--white {
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+/* FOOTER_COMPANY */
+footer .inner .company {
+  margin-top: 20px;
+}
+footer .inner .company ul {
+  display: flex;
+  justify-content: center;
+}
+footer .inner .company ul li {
+  margin: 0px 7px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* FOOTER__COPYLIGHT */
+footer .inner .footer__copylight {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer .inner .footer__copylight > p {
+  font-size: 12px;
+  color: #ccc;
 }
