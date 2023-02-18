@@ -8,8 +8,8 @@
 //MAIN HEADER - SEARCH
 const serachEl = document.querySelector(".search");
 const searchInputEl = serachEl.querySelector("input");
-//searchEl = 전체
-//searchInputEl = 입력공
+//searchEl = 전체공간
+//searchInputEl = 입력공간
 
 serachEl.addEventListener("click", function (e) {
   if (!searchInputEl.classList.contains("toggle")) {
